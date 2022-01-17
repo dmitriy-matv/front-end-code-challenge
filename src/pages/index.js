@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { Header } from '../components/Header/Header';
 import styles from './Index.module.scss';
 
 export const IndexPage = () => {
@@ -11,8 +12,7 @@ export const IndexPage = () => {
         <link rel="icon" href="favicon.ico" />
       </Head>
       <div className={styles.container}>
-        <div>Rehash Code Challenge</div>
-        <div>your name</div>
+        <Header name={"Dmitriy Matviichuk"} />
         <div>WebSockets message here</div>
         <div>RESTful API query results</div>
       </div>
