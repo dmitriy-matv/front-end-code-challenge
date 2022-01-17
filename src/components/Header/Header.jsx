@@ -5,7 +5,7 @@ export const Header = ({ name }) => {
     <header className={classes.wrapper}>
       {/* <div className={classes.name_wrapper}><h1 className={classes.title}>Rehash Code Challange</h1></div> */}
       <h1 className={classes.title}>Rehash Code Challange</h1>
-      <h4 className={classes.name}>{name}</h4>
+      <h2 className={classes.name}>{name}</h2>
     </header>
   )
 }
