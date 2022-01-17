@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { Header } from '../components/Header/Header';
 import { WsStatus } from '../components/Status/Status';
+import { Table } from '../components/Table/Table';
 import styles from './Index.module.scss';
 
 export const IndexPage = () => {
@@ -15,7 +16,7 @@ export const IndexPage = () => {
       <div className={styles.container}>
         <Header name={"Dmitriy Matviichuk"} />
         <WsStatus />
-        <div>RESTful API query results</div>
+        <Table />
       </div>
     </>
   )
