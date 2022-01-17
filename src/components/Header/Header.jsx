@@ -1,8 +1,11 @@
+import classes from "./Header.module.scss"
+
 export const Header = ({ name }) => {
   return (
-    <header>
-      <h1>Rehash Code Challange</h1>
-      <h4>{name}</h4>
+    <header className={classes.wrapper}>
+      {/* <div className={classes.name_wrapper}><h1 className={classes.title}>Rehash Code Challange</h1></div> */}
+      <h1 className={classes.title}>Rehash Code Challange</h1>
+      <h4 className={classes.name}>{name}</h4>
     </header>
   )
 }

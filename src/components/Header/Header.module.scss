@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1080px;
+}
+.title {
+  font-weight: 600;
+  font-size: 94px;
+  color: #0a23a6;
+  margin: 10px 0;
+}
+.name_wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+.name {
+  font-weight: 600;
+  font-size: 48px;
+  color: #086607;
+  margin: 10px 0;
+  align-self: flex-end;
+}
