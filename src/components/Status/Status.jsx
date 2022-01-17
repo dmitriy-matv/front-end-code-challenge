@@ -29,7 +29,7 @@ export const WsStatus = () => {
 
   useEffect(() => {
     if (connected) {
-      setInterval(() => { client.send("hello") }, 2000)
+      setInterval(() => { client.send("ping") }, 2000)
     }
 
     return () => {
@@ -39,7 +39,7 @@ export const WsStatus = () => {
   return (
     <div className={classes.wrapper}>
       <h3 className={classes.title}>Server status</h3>
-      <span className={classes.status} style={{ color: randColor }}>{status}</span>
+      <span className={classes.status} style={{ color: randColor }}>{status ? status : "Loading..."}</span>
     </div>
   )
 }

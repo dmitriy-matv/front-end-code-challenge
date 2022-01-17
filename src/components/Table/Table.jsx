@@ -25,12 +25,15 @@ export const Table = () => {
     </tr>
   })
 
+  if (!data) {
+    return <h2>Loading...</h2>
+  }
   return (
     <>
       <h3 className={classes.title}>Database entries</h3>
       <table className={classes.wrapper}>
         <thead className={classes.header}><tr>{tblHeader}</tr></thead>
-        <tbody className={classes.tableBody}>{tblRows}</tbody>
+        <tbody className={classes.tableBody}>{tblRows.length > 0 ? tblRows : "No data to display"}</tbody>
       </table>
     </>
   )
