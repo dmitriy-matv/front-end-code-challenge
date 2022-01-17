@@ -29,7 +29,7 @@ export const WsStatus = () => {
 
   useEffect(() => {
     if (connected) {
-      setInterval(() => { client.send("hello") }, 1000)
+      setInterval(() => { client.send("hello") }, 2000)
     }
 
     return () => {

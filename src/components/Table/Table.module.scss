@@ -1,0 +1,32 @@
+.title {
+  font-weight: 600;
+  font-size: 18pt;
+  color: #f92121;
+}
+.wrapper {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+.header {
+  color: #5c5c5c;
+  font-size: 18pt;
+  text-align: left;
+}
+.item {
+  padding: 10px 10px;
+}
+.tableBody {
+  & tr {
+    border-bottom: 1px solid black;
+  }
+  & tr:nth-child(odd) {
+    background-color: #e4e4e4;
+  }
+  & tr:nth-child(even) {
+    background-color: #c2bfbf;
+  }
+}
+
+
